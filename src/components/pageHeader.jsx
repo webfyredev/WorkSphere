@@ -8,8 +8,8 @@ export default function PageHeader(props){
             <img src={props.img}  className='w-full h-full object-cover'/>
             <div className='w-full h-full absolute inset-0 bg-black/50 p-10'>
                 <div className='w-70 h-20 mt-5 flex justify-left items-center p-3'>
-                    <h3 className='text-blue-300 font-semibold text-xl'>
-                    <Link to="/">Home <span className='text-white'>/{props.title}</span></Link>
+                    <h3 className='text-blue-500 font-semibold text-xl'>
+                    <Link to="/">Home <span className='text-white text-lg'>/{props.title}</span></Link>
                     </h3>
                 </div>
             </div>

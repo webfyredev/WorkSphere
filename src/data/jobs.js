@@ -30,7 +30,7 @@ const Jobs = [
         logo : logo3, 
         type: 'Internship',
         Job_title : 'Data Analysis',
-        company : 'Goggle',
+        company : 'Microsoft',
         n_of_positions : 10,
         pay_rate :  '111-120',
     },
