@@ -9,21 +9,21 @@ const StaffData = [
         img : staff1,
         name: 'Rolly Banms',
         stack : 'Web Developer',
-        skils : ['HTML', 'CSS', 'JAVASCRIPT', 'PHP']
+        skills : ['HTML', 'CSS', 'JAVASCRIPT', 'PHP']
     },
     {
         id: 2,
         img : staff2,
         name : 'Bomsay Cams',
         stack : 'Backend Developer',
-        skills : ['DJANGO', 'NODE JS', 'SQL,']
+        skills : ['DJANGO', 'NODE JS', 'SQL']
     },
     {
         id: 3,
         img : staff3,
         name : 'Bemsin Mancods',
         stack : 'Data Analysis',
-        skills : ['Excel', 'Python', 'Power BI', 'CSV']
+        skills : ['EXCEL', 'PYTHON', 'Power BI', 'CSV']
     },
     {
         id : 4,
@@ -37,7 +37,7 @@ const StaffData = [
         img : staff5,
         name : 'Edward Jones',
         stack : 'Game Developer',
-        skills : ['Kotlin', 'Flutter', 'Dart']
+        skills : ['KOTLIN', 'FLUTTER', 'DART']
     },
 ];
 

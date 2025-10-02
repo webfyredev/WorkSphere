@@ -7,19 +7,22 @@ export default function NavBar(){
             <div>
                 <h3 className="text-2xl font-semibold text-white cursor-pointer">WorkSphere</h3>
             </div>
-            <div className='w-120 h-full flex flex-row justify-evenly items-center mr-15 overflow-hidden'>
+            <div className='w-125 h-full flex flex-row justify-evenly items-center mr-10 overflow-hidden'>
                 <ul className='flex justify-evenly items-center'>
                     <li>
-                        <Link to="/" className='px-7 py-3 text-sm text-white text-bold hover:bg-blue-600 hover:rounded-sm'>Home</Link>
+                        <Link to="/" className='px-7 py-2.5 text-sm text-white text-bold hover:bg-blue-600 hover:rounded-sm'>Home</Link>
                     </li>
                     <li>
-                        <Link to="/about" className='px-7 py-3 text-sm text-white text-bold hover:bg-blue-600 hover:rounded-sm'>About</Link>
+                        <Link to="/about" className='px-7 py-2.5 text-sm text-white text-bold hover:bg-blue-600 hover:rounded-sm'>About</Link>
                     </li>
                     <li>
-                        <Link to="/jobs" className='px-7 py-3 text-sm text-white text-bold hover:bg-blue-600 hover:rounded-sm'>Jobs</Link>
+                        <Link to="/jobs" className='px-7 py-2.5 text-sm text-white text-bold hover:bg-blue-600 hover:rounded-sm'>Jobs</Link>
                     </li>
                     <li>
-                        <Link to="/contacts" className='px-7 py-3 text-sm text-white text-bold hover:bg-blue-600 hover:rounded-sm'>Contacts</Link>
+                        <Link to="/contacts" className='px-7 py-2.5 text-sm text-white text-bold hover:bg-blue-600 hover:rounded-sm'>Contacts</Link>
+                    </li>
+                    <li>
+                        <Link to="/contacts" className='px-8 py-2.5 text-sm text-white text-bold hover:bg-blue-600 hover:rounded-sm bg-blue-500/30 rounded-sm'>Sign Up</Link>
                     </li>
                 </ul>
             </div>

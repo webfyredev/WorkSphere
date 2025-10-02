@@ -5,10 +5,11 @@ import video from '../vids/vids.mp4'
 import Job from "../components/jobs";
 import Company from "../components/companies";
 import { motion } from "framer-motion";
-import { ScrollUp, ScrollUpNext, CardHover, scrollLeft, scrollRight} from "../animations/motion";
+import { ScrollUp, ScrollUpNext, CardHover, scrollLeft, scrollRight, CardClicks} from "../animations/motion";
 import { SearchCheckIcon, User, Send, Link, Video, Briefcase, Play} from "lucide-react";
 import Footer from '../components/footer.jsx'
 import StaffData from "../data/staffData";
+import Testimonial from "../components/testimonial.jsx";
 export default function Home(){
     return(
         <>
@@ -156,20 +157,27 @@ export default function Home(){
             <motion.h2 {...ScrollUp} className="text-xl md:text-2xl font-semibold mt-15 mb-2 mt-10 w-full h-10 flex justify-center items-center text-blue-500">Meet Our Expert Staff &amp; Their Tech Stacks</motion.h2>
             <div className="w-full p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
                 {StaffData.map((staff) =>(
-                <div className="w-[90%] flex flex-col shadow-lg rounded-sm items-center cursor-pointer my-5">
+                <motion.div {...scrollLeft} {...CardHover} className="w-[90%] flex flex-col shadow-lg rounded-sm items-center cursor-pointer my-5">
                     <img src={staff.img} className="w-20 h-20 mt-10 mb-5 rounded-full"/>
                     <h3 className="mb-1 text-blue-500 font-semibold">{staff.name}</h3>
                     <p className="text-sm text-gray-400 mb-3">{staff.stack}</p>
-                    {/* <ul className="flex flex-wrap gap-2 mt-3">
-                        {staff.skills.map((skill, i) =>(
-                            <li key={i}>{skill}</li>
-                        ))}
-                    </ul> */}
-                </div>
+                    <div className="w-[80%] sm:w-full md:w-full h-auto md:h-20  mb-5 md:mb-15">
+                        <ul className="w-full grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-5 p-5 ">
+                            {staff.skills.map((skills, index) =>(
+                                <li key={index} className="rounded-sm text-xs font-semibold flex items-center justify-center md:p-2 p-3 bg-gray-100 text-gray-700 hover:font-bold hover:bg-linear-to-r from-blue-500 to-blue-600 transition-all duration-300 hover:text-white">{skills}</li>
+                            ))}
+                        </ul>
+                    </div>
+                    <motion.button {...CardHover} {...CardClicks} className="w-[95%] h-12 bg-linear-to-r from-blue-500 to-blue-600 mb-2 rounded-sm cursor-pointer text-white font-semibold flex items-center justify-center"> <Link  className="w-4 h-4 mt-1"/>Connect</motion.button>
+                </motion.div>
                 ))}
                 
             </div>
+            <div className='w-full h-10 flex items-center justify-center mb-5'>
+                <motion.button {...CardHover} {...CardClicks} className="w-40 h-full flex justify-center items-center font-semibold text-sm text-white cursor-pointer rounded-sm bg-linear-to-r from-blue-500 to-blue-600">View More Staffs</motion.button>
             </div>
+            </div>
+            <Testimonial />
             <Footer />
         </>
     );

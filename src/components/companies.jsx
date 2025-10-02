@@ -14,7 +14,7 @@ export default function Company(){
             <div className=" w-full h-25 flex items-center justify-center">
                 <div className="flex flex-row justify-evenly items-center w-[65%] h-full">
                     {company.map((data) => (
-                        <motion.div {...CardHover} initial={{opacity : 0, x:300}} whileInView={{opacity: 1, x:0}} transition={{duration : 2}} exit={{opacity:0, x:300}}  className="w-30 h-[90%] cursor-pointer flex flex-col justify-evenly items-center rounded-sm shadow-lg">
+                        <motion.div initial={{opacity : 0, x:300}} whileInView={{opacity: 1, x:0}} whileHover={{scale:1.2}} transition={{duration : 2}} exit={{opacity:0, x:300}}  className="w-30 h-[90%] cursor-pointer flex flex-col justify-evenly items-center rounded-sm shadow-lg">
                             <img src={data.logo}  className="w-10 h-10"/>
                             <p className="text-blue-200 font-semibold italic text-sm">{data.name}</p>
                         </motion.div>
