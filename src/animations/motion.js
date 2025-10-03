@@ -21,10 +21,10 @@ export const CardClicks = {
 export const scrollLeft ={
     initial : {opacity : 0, x:40},
     whileInView : {opacity: 1, x:0},
-    transition : {duration : 0.2, delay : 0.3}
+    transition : {duration : 1, delay : 0.3}
 }
 export const scrollRight ={
     initial : {opacity : 0, x:-40},
     whileInView : {opacity: 1, x:0},
-    transition : {duration : 1}
+    transition : {duration : 1, delay : 0.3}
 }

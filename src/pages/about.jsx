@@ -7,6 +7,7 @@ import AboutS from '../images/bg2.jpg'
 import { motion } from "framer-motion";
 import Features from "../components/features";
 import Doms from "../components/doms";
+import Blog from "../components/blog";
 export default function About(){
     return(
         <>
@@ -46,6 +47,7 @@ export default function About(){
             </motion.div>
             <Features />
             <Doms />
+            <Blog />
             <Footer />
         </>
     );

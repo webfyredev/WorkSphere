@@ -17,19 +17,19 @@ const testimonials = [
         name : 'ADAM JINNA',
         text : 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti blanditiis saepe mollitia.',
         img : testImg,
-        rating: 5
+        rating: 4
     },
     {
         name : 'LISA GREEN',
         text : 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti blanditiis saepe mollitia.',
         img : testImg,
-        rating: 4
+        rating: 5
     },
     {
         name : 'MARK JOHN',
         text : 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti blanditiis saepe mollitia.',
         img : testImg,
-        rating : 5
+        rating : 4
     }
 ]
 

@@ -11,6 +11,7 @@ import Footer from '../components/footer.jsx'
 import StaffData from "../data/staffData";
 import Testimonial from "../components/testimonial.jsx";
 import HeroSlider from "../components/slider.jsx";
+import Blog from "../components/blog.jsx";
 export default function Home(){
     return(
         <>
@@ -180,6 +181,7 @@ export default function Home(){
             </div>
             <Testimonial />
             <HeroSlider />
+            <Blog />
             <Footer />
         </>
     );

@@ -1,7 +1,7 @@
 import Footer from "../components/footer";
 import NavBar from "../components/NavBar";
 import PageHeader from "../components/pageHeader";
-import contactsImg from '../images/bnr2.jpg'
+import contactsImg from '../images/bnr1.jpg'
 export default function Contacts(){
     return(
         <>

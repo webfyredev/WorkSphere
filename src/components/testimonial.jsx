@@ -40,7 +40,7 @@ export default function Testimonial(){
                         <h3 className="font-semibold text-sm text-blue-600">{data.name}</h3>
                         <div className="flex flex-row justify-center mb-3 mt-2">
                             {Array.from({length:5}).map((_, i) =>(
-                                <Star key={i} size={15} className={i < data.rating ? "text-yellow-400 fill-yellow-400" : "text-gray-300"}/>
+                                <Star key={i} size={15} className={i < data.rating ? "text-blue-500 fill-blue-500" : "text-blue-500"}/>
                             ))}
                         </div>
                     </div>

@@ -9,19 +9,19 @@ export default function Footer(){
                 </h3>
                 <ul className="flex w-120 h-full justify-evenly items-center text-sm text-white">
                     <li>
-                        <a href="" className="px-5 py-2 hover:bg-blue-600 rounded-sm">Home</a>
+                        <Link to="/" className="px-5 py-2 hover:bg-blue-600 rounded-sm">Home</Link>
                     </li>
                     <li>
-                        <a href="" className="px-5 py-2 hover:bg-blue-600 rounded-sm">About</a>
+                        <Link to="/about" className="px-5 py-2 hover:bg-blue-600 rounded-sm">About</Link>
                     </li>
                     <li>
-                        <a href="" className="px-5 py-2 hover:bg-blue-600 rounded-sm">Jobs</a>
+                        <Link to="/jobs" className="px-5 py-2 hover:bg-blue-600 rounded-sm">Jobs</Link>
                     </li>
                     <li>
-                        <a href="" className="px-5 py-2 hover:bg-blue-600 rounded-sm">Contacts</a>
+                        <Link to="/contacts" className="px-5 py-2 hover:bg-blue-600 rounded-sm">Contacts</Link>
                     </li>
                     <li>
-                        <a href="" className="px-5 py-2 hover:bg-blue-600 rounded-sm">Sign Up</a>
+                        <Link to="/" className="px-5 py-2 hover:bg-blue-600 rounded-sm">Sign Up</Link>
                     </li>
 
                 </ul>
