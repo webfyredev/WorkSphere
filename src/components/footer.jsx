@@ -21,7 +21,7 @@ export default function Footer(){
                         <Link to="/contacts" className="px-5 py-2 hover:bg-blue-600 rounded-sm">Contacts</Link>
                     </li>
                     <li>
-                        <Link to="/" className="px-5 py-2 hover:bg-blue-600 rounded-sm">Sign Up</Link>
+                        <Link to="/register" className="px-5 py-2 hover:bg-blue-600 rounded-sm">Sign Up</Link>
                     </li>
 
                 </ul>

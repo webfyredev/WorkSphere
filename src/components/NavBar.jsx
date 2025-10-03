@@ -22,7 +22,7 @@ export default function NavBar(){
                         <Link to="/contacts" className='px-7 py-2.5 text-sm text-white text-bold hover:bg-blue-600 hover:rounded-sm'>Contacts</Link>
                     </li>
                     <li>
-                        <Link to="/contacts" className='px-8 py-2.5 text-sm text-white text-bold hover:bg-blue-600 hover:rounded-sm bg-blue-500/30 rounded-sm'>Sign Up</Link>
+                        <Link to="/register" className='px-8 py-2.5 text-sm text-white text-bold hover:bg-blue-600 hover:rounded-sm bg-blue-500/30 rounded-sm'>Sign Up</Link>
                     </li>
                 </ul>
             </div>
