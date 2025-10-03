@@ -39,6 +39,13 @@ const StaffData = [
         stack : 'Game Developer',
         skills : ['KOTLIN', 'FLUTTER', 'DART']
     },
+    {
+        id : 6,
+        img : staff5,
+        name : 'Edward Abraham',
+        stack : 'Game Developer',
+        skills : ['KOTLIN', 'FLUTTER', 'DART']
+    },
 ];
 
 export default StaffData
