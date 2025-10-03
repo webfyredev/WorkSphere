@@ -4,8 +4,8 @@ import { ScrollUp, CardHover, CardClicks, scrollLeft, scrollRight} from "../anim
 export default function Blog(){
     return (
         <>
-            <motion.h2 {...ScrollUp} className="text-2xl font-semibold mt-20 w-full h-10 flex justify-center items-center text-blue-500">Get in Touch with Latest Tech News</motion.h2>
-        <p className="w-full h-10 flex items-center justify-center text-gray-400 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, fugiat!</p>
+        <motion.h2 {...ScrollUp} className="text-2xl font-semibold mt-20 w-full h-10 flex justify-center items-center text-blue-500">Get in Touch with Latest Tech News</motion.h2>
+        <motion.p {...scrollLeft} className="w-full h-10 flex items-center justify-center text-gray-400 text-xs md:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, fugiat!</motion.p>
             <div className="w-full h-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 p-5 gap-5">
                 {blogs.map((data) =>(
                     <motion.article {...CardHover} {...scrollLeft} className="w-full h-auto shadow-md mb-3 flex flex-col p-3 cursor-pointer">

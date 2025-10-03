@@ -156,8 +156,8 @@ export default function Home(){
             <motion.h2 {...ScrollUp} className="text-xl md:text-2xl font-semibold mt-15 mb-2 mt-10 w-full h-10 flex justify-center items-center text-blue-500">Meet Our Expert Staff &amp; Their Tech Stacks</motion.h2>
             <div className="w-full p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
                 {StaffData.map((staff) =>(
-                <motion.div {...scrollLeft} {...CardHover} className="w-[90%] flex flex-col shadow-lg rounded-sm items-center cursor-pointer my-5">
-                    <img src={staff.img} className="w-20 h-20 mt-10 mb-5 rounded-full"/>
+                <motion.div {...scrollLeft} {...CardHover} className="w-[90%] flex flex-col shadow-[0_0_10px_rgba(0,0,0,0.1)] rounded-sm items-center cursor-pointer my-5">
+                    <img src={staff.img} className="w-20 h-20 mt-10 mb-5 rounded-full shadow-[0_0_10px_rgba(0,0,0,0.1)]"/>
                     <h3 className="mb-1 text-blue-500 font-semibold">{staff.name}</h3>
                     <p className="text-sm text-gray-400 mb-3">{staff.stack}</p>
                     <div className="w-[80%] sm:w-full md:w-full h-auto md:h-20  mb-5 md:mb-15">
@@ -177,7 +177,7 @@ export default function Home(){
             </div>
             </div>
             <Testimonial />
-            <HeroSlider />
+            {/* <HeroSlider /> */}
             <Blog />
             <Footer />
         </>
