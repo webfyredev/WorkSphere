@@ -1,7 +1,7 @@
 import NavBar from "../components/NavBar";
 import PageHeader from "../components/pageHeader";
 import Footer from "../components/footer";
-import registerImg from '../images/banner-9.jpg'
+import registerImg from '../images/auths (3).jpg'
 import { Link } from "react-router-dom";
 import { CardHover, CardClicks } from "../animations/motion";
 import { motion } from "framer-motion";

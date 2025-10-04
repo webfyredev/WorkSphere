@@ -1,8 +1,10 @@
-import staff1 from '../images/staff/staff (1).jpg'
-import staff2 from '../images/staff/staff (2).jpg'
-import staff3 from '../images/staff/staff (3).jpg'
-import staff4 from '../images/staff/staff (4).jpg'
-import staff5 from '../images/staff/staff (5).png'
+import staff1 from '../images/staff/staffs (1).jpg'
+import staff2 from '../images/staff/staffs (2).jpg'
+import staff3 from '../images/staff/staffs (3).jpg'
+import staff4 from '../images/staff/staffs (4).jpg'
+import staff5 from '../images/staff/staffs (5).jpg'
+import staff6 from '../images/staff/staffs (6).jpg'
+
 const StaffData = [
     {
         id: 1,
@@ -41,7 +43,7 @@ const StaffData = [
     },
     {
         id : 6,
-        img : staff5,
+        img : staff6,
         name : 'Edward Abraham',
         stack : 'Game Developer',
         skills : ['KOTLIN', 'FLUTTER', 'DART']

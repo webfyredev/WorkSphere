@@ -5,12 +5,14 @@ import video from '../vids/vids.mp4'
 import Job from "../components/jobs";
 import Company from "../components/companies";
 import { motion } from "framer-motion";
+import { Link as Anchor } from "react-router-dom";
 import { ScrollUp, ScrollUpNext, CardHover, scrollLeft, scrollRight, CardClicks} from "../animations/motion";
 import { SearchCheckIcon, User, Send, Link, Video, Briefcase, Play} from "lucide-react";
 import Footer from '../components/footer.jsx'
 import StaffData from "../data/staffData";
 import Testimonial from "../components/testimonial.jsx";
 import HeroSlider from "../components/slider.jsx";
+import { FaLinkedin, FaTwitter, FaGithub, FaInstagram, FaYoutube} from "react-icons/fa"
 import Blog from "../components/blog.jsx";
 export default function Home(){
     return(
@@ -156,18 +158,30 @@ export default function Home(){
             <motion.h2 {...ScrollUp} className="text-xl md:text-2xl font-semibold mt-15 mb-2 mt-10 w-full h-10 flex justify-center items-center text-blue-500">Meet Our Expert Staff &amp; Their Tech Stacks</motion.h2>
             <div className="w-full p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
                 {StaffData.map((staff) =>(
-                <motion.div {...scrollLeft} {...CardHover} className="w-[90%] flex flex-col shadow-[0_0_10px_rgba(0,0,0,0.1)] rounded-sm items-center cursor-pointer my-5">
-                    <img src={staff.img} className="w-20 h-20 mt-10 mb-5 rounded-full shadow-[0_0_10px_rgba(0,0,0,0.1)]"/>
+                <motion.div {...scrollLeft} {...CardHover} className="w-[90%] flex flex-col shadow-[0_0_10px_rgba(0,0,0,0.1)] rounded-sm items-center my-5">
+                    <img src={staff.img} className="w-20 h-20 mt-10 mb-5 rounded-full shadow-[0_0_10px_rgba(0,0,0,0.1)] object-cover"/>
                     <h3 className="mb-1 text-blue-500 font-semibold">{staff.name}</h3>
                     <p className="text-sm text-gray-400 mb-3">{staff.stack}</p>
                     <div className="w-[80%] sm:w-full md:w-full h-auto md:h-20  mb-5 md:mb-15">
+                        <p className="w-full h-5 flex items-center justify-center font-semibold text-xs text-gray-500">Skills</p>
                         <ul className="w-full grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-5 p-5 ">
                             {staff.skills.map((skills, index) =>(
-                                <li key={index} className="rounded-sm text-xs font-semibold flex items-center justify-center md:p-2 p-3 bg-gray-100 text-gray-700 hover:font-bold hover:bg-linear-to-r from-blue-500 to-blue-600 transition-all duration-300 hover:text-white">{skills}</li>
+                                <li key={index} className="rounded-sm text-xs font-semibold flex items-center justify-center md:p-2 p-3 bg-gray-100 text-gray-700 hover:font-bold hover:bg-linear-to-r from-blue-500 to-blue-600 transition-all duration-300 hover:text-white cursor-pointer">{skills}</li>
                             ))}
                         </ul>
                     </div>
-                    <motion.button {...CardHover} {...CardClicks} className="w-[95%] h-12 bg-linear-to-r from-blue-500 to-blue-600 mb-2 rounded-sm cursor-pointer text-white font-semibold flex items-center justify-center"> <Link  className="w-4 h-4 mt-1"/>Connect</motion.button>
+                    <motion.div {...scrollLeft} className="w-[60%] md:w-[60%] sm:w-[75%] h-12 mb-5 flex items-center justify-evenly">
+                        <motion.Anchor {...CardHover} {...CardClicks} to="#"><FaLinkedin  className="w-5 h-10 cursor-pointer text-[#0077B5]"/>
+                        </motion.Anchor>
+                        <motion.Anchor {...CardHover} {...CardClicks} to="#"><FaTwitter className="w-5 h-10 cursor-pointer text-[#1DA1F2]"/>
+                        </motion.Anchor>
+                        <motion.Anchor {...CardHover} {...CardClicks} to="#"><FaGithub className="w-5 h-10 cursor-pointer text-[#181717]"/>
+                        </motion.Anchor>
+                        <motion.Anchor {...CardHover} {...CardClicks} to="#"><FaInstagram className="w-5 h-10 cursor-pointer text-[#E1306C]"/>
+                        </motion.Anchor>
+                         <motion.Anchor {...CardHover} {...CardClicks} to="#"><FaYoutube className="w-5 h-10 cursor-pointer text-[#FF0000]"/>
+                        </motion.Anchor>
+                    </motion.div>
                 </motion.div>
                 ))}
                 

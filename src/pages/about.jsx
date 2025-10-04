@@ -16,12 +16,12 @@ export default function About(){
             title = "About"
             img = {AboutImg}
             />
-            <motion.div {...ScrollUpNext} className="w-full h-180 sm:h-180 md:h-100 my-5 flex md:flex-row flex-col p-3">
+            <motion.div {...ScrollUpNext} className="w-full h-200 sm:h-180 md:h-100 my-5 flex md:flex-row flex-col p-3">
                 <motion.main {...scrollRight} className="w-full md:w-1/2 h-1/2 sm:h-1/2 md:h-full p-5 shadow-sm">
                     <h2 className="mt-5 text-2xl text-blue-500 font-semibold">
                         About Us
                     </h2>
-                    <p className="text-xs md:text-[13px] text-justify mt-3">
+                    <p className="w-[95%] text-xs md:text-[13px] text-justify mt-3">
                         Lorem Ipsum is simply dummy text of the printing and typesetting 
                         industry. Lorem Ipsum has been the industry's standard dummy 
                         text ever since the 1500s, when an unknown printer took a 
@@ -30,7 +30,7 @@ export default function About(){
                         when looking at its layout. The point of using Lorem Ipsum is 
                         that it has a more-or-less.
                     </p>
-                    <p className="text-xs md:text-[13px] text-justify mt-3">
+                    <p className="w-[95%] text-xs md:text-[13px] text-justify mt-3">
                         Lorem Ipsum is simply dummy text of the printing and typesetting 
                         industry. Lorem Ipsum has been the industry's standard dummy 
                         text ever since the 1500s, when an unknown printer took a 

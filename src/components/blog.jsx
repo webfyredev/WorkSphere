@@ -8,7 +8,7 @@ export default function Blog(){
         <motion.p {...scrollLeft} className="w-full h-10 flex items-center justify-center text-gray-400 text-xs md:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, fugiat!</motion.p>
             <div className="w-full h-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 p-5 gap-5">
                 {blogs.map((data) =>(
-                    <motion.article {...CardHover} {...scrollLeft} className="w-full h-auto shadow-md mb-3 flex flex-col p-3 cursor-pointer">
+                    <motion.article {...CardHover} {...scrollLeft} className="w-full h-auto shadow-[0_0_10px_rgba(0,0,0,0.1)] mb-3 flex flex-col p-3 cursor-pointer">
                         <img src={data.img} className="w-full h-50 object-cover hover:rounded-xs"/>
                         <div className="w-full h-7 mt-2 flex flex-row justify-left items-left">
                             <p className="text-xs mt-1 text-gray-400 font-semibold">{data.author}</p>
