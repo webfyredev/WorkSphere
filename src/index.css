@@ -2,3 +2,18 @@
 body{
     overflow-x: hidden;
 }
+.swiper-button-next, .swiper-button-prev{
+    @apply !text-blue-500 !p-2.5 !top-50 !font-bold !flex !items-center !justify-center
+}
+.swiper-button-next::after, .swiper-button-prev::after{
+    @apply !text-base;
+}
+.swiper-button-next{
+    @apply !right-[-3] 
+}
+.swiper-button-prev{
+    @apply !left-[5]
+}
+/* .swiper-pagination-bullet{
+    @apply !top-20
+} */
