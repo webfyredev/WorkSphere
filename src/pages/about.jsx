@@ -8,6 +8,8 @@ import { motion } from "framer-motion";
 import Features from "../components/features";
 import Doms from "../components/doms";
 import Blog from "../components/blog";
+import domsImg from '../images/doms.jpg'
+
 export default function About(){
     return(
         <>
@@ -46,7 +48,11 @@ export default function About(){
                 </motion.aside>
             </motion.div>
             <Features />
-            <Doms />
+            <Doms
+            img = {domsImg}
+            title = "Make a Difference with Your Tech Skills"
+            sub_text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry..."
+            but_text = "Start the journey" />
             <Blog />
             <Footer />
         </>

@@ -2,11 +2,14 @@ import PageHeader from "../components/pageHeader"
 import NavBar from "../components/NavBar"
 import Footer from "../components/footer"
 import jobImg from '../images/doms (3).jpg'
+import domsImg from '../images/auths (6).jpg'
 import jobs from "../data/jobPage"
 import { motion } from "framer-motion"
 import {FaChevronRight} from 'react-icons/fa'
 import { CardClicks, CardHover, ScrollUp, scrollLeft} from "../animations/motion"
 import { Link } from "react-router-dom"
+import Doms from "../components/doms"
+import Blog from "../components/blog"
 export default function Jobs(){
     return(
         <>
@@ -44,6 +47,12 @@ export default function Jobs(){
                     </motion.div>
                 ))}
              </motion.div>
+             <Doms 
+             img = {domsImg}
+             title = "Kickstart Your Tech Career Today"
+             sub_text = "Take the next step toward growth. Apply for the exciting tech jobs that match your skills and passion"
+             but_text = "Get Started"  />
+             <Blog />
             <Footer />
         </>
     )
