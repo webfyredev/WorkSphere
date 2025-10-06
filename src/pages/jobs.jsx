@@ -17,13 +17,23 @@ export default function Jobs(){
             <PageHeader 
             title = 'Jobs'
             img = {jobImg}/>
-            <motion.h2 {...ScrollUp} className="text-2xl font-semibold mt-20 w-full h-10 flex justify-center items-center text-blue-500">
+            <motion.h2 {...ScrollUp} className="text-2xl md:text-3xl font-semibold mt-20 w-full h-10 flex justify-center items-center text-blue-500">
                 Find Your Next Tech Opportunity 
             </motion.h2>
-            <motion.p {...scrollLeft} className="w-full h-10 flex items-center justify-center text-gray-400 text-sm mb-10">
+            <motion.p {...scrollLeft} className="w-full h-10 flex items-center justify-center text-gray-400 text-xs md:text-sm mb-3">
                 Browse top tech roles tailored for developers, designers, analysts, and more.
             </motion.p>
-            
+            <div className="w-full h-auto sm:h-auto md:h-30 mb-15 flex justify-center items-center px-5 md:px-15 py-5">
+                <form className="w-full h-full rounded-sm shadow-[0_0_10px_rgba(0,0,0,0.1)] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 space-x-5 px-5 py-4">
+                    <input type="text" placeholder="Skills..." className="border-1 border-blue-300 p-2 outline-blue-400 text-blue-400 text-sm md:text-md shadow-xs mb-5 md:mb-0"/>
+                    <input type="text" placeholder="Search By Location..." className="border-1 border-blue-300 p-2 outline-blue-400 text-sm md:text-md text-blue-400 mb-5 md:mb-0"/>
+                    <motion.button {...CardHover} {...CardClicks} type="submit" className="w-[95%] md:w-full h-full cursor-pointer bg-linear-to-r from-blue-500 to-blue-600 text-white mb-5 md:mb-0 font-semibold rounded-xs">Search Job</motion.button>
+
+                </form>
+            </div>
+            <motion.h2 {...ScrollUp} className="text-2xl md:text-3xl font-semibold mt-20 w-full h-10 flex justify-center items-center text-blue-500 mb-5">
+                Latest Job Offers
+            </motion.h2>
              <motion.div {...scrollLeft} className="w-full h-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 p-3">
                 {jobs.map((data, index) =>(
                     <motion.div {...CardHover} className="w-[98%] h-auto p-5 flex flex-col shadow-[0_0_5px_rgba(0,0,0,0.1)] rounded-md">
