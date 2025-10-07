@@ -52,7 +52,7 @@ export default function Jobs(){
                                 ))}
                             </ul>
                         </div>
-                        <motion.button {...CardClicks} className="w-[45%] h-10  bg-linear-to-r from-blue-500 to-blue-600 font-semibold text-white my-2 cursor-pointer rounded-sm text-sm flex items-center justify-center">Apply Now  <FaChevronRight  className="w-3 h-3 mt-0.5 ml-0.5"/></motion.button>
+                        <motion.button {...CardClicks} className="w-[30%] sm:w-[45%] md:w-[40%] h-10  bg-linear-to-r from-blue-500 to-blue-600 font-semibold text-white my-2 cursor-pointer rounded-sm text-sm flex items-center justify-center">Apply Now  <FaChevronRight  className="w-3 h-3 mt-0.5 ml-0.5"/></motion.button>
                         <p className="text-gray-500 text-[10px] w-full h-6 flex justify-end">Posted: {data.posted}</p>
                     </motion.div>
                 ))}
