@@ -13,7 +13,7 @@ export default function Contacts(){
             title = 'Contacts'
             img = {contactsImg}
              />
-             <div className="mt-5 w-full h-90 flex shadow-md justify-center items-center mb-5 p-2 md:p-0">
+             <div className="mt-5 w-full h-90 flex justify-center items-center mb-5 p-2 md:p-0">
                 <motion.img {...scrollRight} src={SoonBg} className=" w-full md:w-[45%] h-full object-cover hover:cursor-pointer" />
              </div> 
             <Footer />

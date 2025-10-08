@@ -22,7 +22,7 @@ export default function Register(){
                             <input type="text" placeholder="Last name" className="border-1 border-blue-200 outline-blue-200 rounded-sm w-full h-11 mb-3 p-2 text-sm text-blue-400" />
                             <input type="email" placeholder="Email" className="border-1 border-blue-200 outline-blue-200 rounded-sm w-full h-11 mb-3 p-2 text-sm text-blue-400" />
                             <input type="text" placeholder="Phone" className="border-1 border-blue-200 outline-blue-200 rounded-sm w-full h-11 mb-3 p-2 text-sm text-blue-400" />
-                            <p className="w-full flex items-center justify-center text-xs my-3 text-gray-400 italic font-semibold">Your password is 0-20 characters <br />Includes one letter and one number</p>
+                            <p className="w-full flex items-center justify-center text-xs my-3 text-gray-300 text-center">Your password is 0-20 characters <br />Includes one letter and one number</p>
                             <input type="password" placeholder="Password" className="border-1 border-blue-200 outline-blue-200 rounded-sm w-full h-11 mb-3 p-2 text-sm text-blue-400" />
                             <input type="password" placeholder="Confirm-Password" className="border-1 border-blue-200 outline-blue-200 rounded-sm w-full h-11 mb-3 p-2 text-sm text-blue-400" />
                             <div className="w-[75%] h-6 flex flex-row justify-evenly items-center mb-2">
