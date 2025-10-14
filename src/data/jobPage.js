@@ -1,6 +1,22 @@
+import Jobs1 from '../images/Job_cat/frontend.jpg'
+import Jobs2 from '../images/Job_cat/backend.jpg'
+import Jobs3 from '../images/Job_cat/data-analyst.jpg'
+import Jobs4 from '../images/Job_cat/devops.jpg'
+import Jobs5 from '../images/Job_cat/uiux.jpg'
+import Jobs6 from '../images/Job_cat/appdev.jpg'
+import Jobs7 from '../images/Job_cat/cybersecurity.jpg'
+import Jobs8 from '../images/Job_cat/aiengineer.jpg'
+import Jobs9 from '../images/Job_cat/cloudarchitect.jpg'
+import Jobs10 from '../images/Job_cat/blockchain.jpg'
+
+
+
+
+
 const jobs = [
   {
     id: 1,
+    img : Jobs1,
     title: "Frontend Developer",
     company: "TechWave Solutions",
     location: "Remote",
@@ -11,6 +27,7 @@ const jobs = [
   },
   {
     id: 2,
+    img : Jobs2,
     title: "Backend Developer",
     company: "CloudNet Inc.",
     location: "New York, USA",
@@ -21,6 +38,7 @@ const jobs = [
   },
   {
     id: 3,
+    img : Jobs3,
     title: "Data Analyst",
     company: "DataSpark",
     location: "London, UK",
@@ -31,6 +49,7 @@ const jobs = [
   },
   {
     id: 4,
+    img : Jobs4,
     title: "DevOps Engineer",
     company: "NextGen Systems",
     location: "Remote",
@@ -41,6 +60,7 @@ const jobs = [
   },
   {
     id: 5,
+    img : Jobs5,
     title: "UI/UX Designer",
     company: "PixelCraft Studio",
     location: "Berlin, Germany",
@@ -51,6 +71,7 @@ const jobs = [
   },
   {
     id: 6,
+    img : Jobs6,
     title: "Mobile App Developer",
     company: "AppHub",
     location: "Toronto, Canada",
@@ -61,6 +82,7 @@ const jobs = [
   },
   {
     id: 7,
+    img : Jobs7,
     title: "Cybersecurity Specialist",
     company: "SecureTech",
     location: "Austin, USA",
@@ -71,6 +93,7 @@ const jobs = [
   },
   {
     id: 8,
+    img : Jobs8,
     title: "AI/ML Engineer",
     company: "DeepMind Labs",
     location: "Remote",
@@ -81,6 +104,7 @@ const jobs = [
   },
   {
     id: 9,
+    img : Jobs9,
     title: "Cloud Architect",
     company: "SkyNet Cloud",
     location: "Dubai, UAE",
@@ -91,6 +115,7 @@ const jobs = [
   },
   {
     id: 10,
+    img : Jobs10,
     title: "Blockchain Developer",
     company: "CryptoWorks",
     location: "Remote",
