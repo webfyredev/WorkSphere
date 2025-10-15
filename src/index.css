@@ -1,6 +1,18 @@
 @import "tailwindcss";
-body{
-    overflow-x: hidden;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+html, body {
+  width: 100%;
+  max-width: 100%;
+}
+img, video {
+  max-width: 100%;
 }
 .swiper-button-next, .swiper-button-prev{
     @apply !text-blue-500 !p-2.5 !top-50 !font-bold !flex !items-center !justify-center

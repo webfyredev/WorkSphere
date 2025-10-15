@@ -16,7 +16,7 @@ export default function Login(){
             title = 'Sign In'
             img = {loginImg}
             />
-            <div className="w-full h-auto flex items-center justify-center p-5">
+            <div className="w-full h-auto flex items-center justify-center p-5 mb-5">
                     <form action="" className="w-110 auto  shadow-[0_0_10px_rgba(0,0,0,0.1)] flex flex-col p-5">
                         <h3 className="w-full h-10 flex items-center justify-center font-bold text-blue-400">SIGN IN</h3>
                         <div className="flex flex-col w-full h-auto mt-5">

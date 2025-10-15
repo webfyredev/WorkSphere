@@ -34,7 +34,7 @@ export default function Testimonial(){
         >
             {testimonials.map((data, index) =>(
                 <SwiperSlide key={index}>
-                    <motion.div {...CardHover} className="bg-white w-[90%] shadow- shadow-[0_0_10px_rgba(0,0,0,0.1)] rounded-2xl p-6 flex flex-col items-center justify-center text-center h-75 mb-15 cursor-pointer">
+                    <motion.div {...CardHover} className="ml-5 mt-5 bg-white w-[90%] shadow- shadow-[0_0_10px_rgba(0,0,0,0.1)] rounded-2xl p-6 flex flex-col items-center justify-center text-center h-75 mb-15 cursor-pointer">
                         <img src={data.img} className="w-16 h-16 rounded-full mb-4 object-cover" />
                         <p className="text-gray-600 mb-4 text-sm">{data.text}</p>
                         <h3 className="font-semibold text-sm text-blue-600">{data.name}</h3>

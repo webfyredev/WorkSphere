@@ -19,7 +19,7 @@ export default function About(){
             img = {AboutImg}
             />
             <motion.div {...ScrollUpNext} className="w-full h-200 sm:h-180 md:h-100 my-5 flex md:flex-row flex-col p-3">
-                <motion.main {...scrollRight} className="w-full md:w-1/2 h-1/2 sm:h-1/2 md:h-full p-5 shadow-sm">
+                <motion.main {...scrollRight} className="w-full md:w-1/2 h-1/2 sm:h-1/2 md:h-full p-5 shadow-sm mb-10 md:shadow-sm">
                     <h2 className="mt-5 text-2xl text-blue-500 font-semibold">
                         About Us
                     </h2>
@@ -43,7 +43,7 @@ export default function About(){
                     </p>
                     <motion.button {...CardHover} {...CardClicks} className="px-8 py-2.5 bg-linear-to-r from-blue-500 to-blue-600 mt-5 font-semibold text-white rounded-xs cursor-pointer">Read More</motion.button>
                 </motion.main>
-                <motion.aside {...scrollLeft} className="w-full h-1/2 md:w-1/2 sm:h-1/2 md:h-full">
+                <motion.aside {...scrollLeft} className="w-full h-[40%] md:w-1/2 sm:h-1/2 md:h-full">
                     <img src={AboutS} className="w-full h-full object-cover cursor-pointer"/>
                 </motion.aside>
             </motion.div>

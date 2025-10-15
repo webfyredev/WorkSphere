@@ -1,7 +1,6 @@
 import NavBar from "../components/NavBar";
 import bgSlider from '../images/banner-3.jpg'
 import bgSlider2 from '../images/banner-9.jpg'
-import video from '../vids/vids.mp4'
 import Job from "../components/jobs";
 import Company from "../components/companies";
 import { motion } from "framer-motion";
@@ -137,26 +136,11 @@ export default function Home(){
                     </motion.div>
                 </motion.div>
             </div>
-            <div className="w-full h-120 relative mb-5">
-                <video src={video} autoPlay className="w-full h-full object-cover"></video>
-                {/* <img src={bgSlider2} className="w-full h-full object-cover" /> */}
-                <div className="absolute w-full h-full inset-0 bg-black/45 flex justify-center items-center">
-                    <div className="w-120 h-70 flex flex-col items-center">
-                        <motion.h3 {...scrollRight} className="text-white mt-5 text-4xl font-semibold mb-2">Are you new here</motion.h3>
-                        <motion.p {...scrollLeft} className="text-white text-xs mb-7">This is a tutorial guide on how to have a smooth interaction with the sites</motion.p>
-                        <div className="w-25 h-25 rounded-full bg-white cursor-pointer flex justify-center items-center animate-bounce">
-                            <div className="w-[70%] h-[70%] rounded-full shadow-xl shadow-blue-500/80  flex justify-center items-center">
-                                <Play className="w-10 h-10 fill-blue-500/100 text-transparent" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <Job />
             <Company />
             <div>
             <motion.h2 {...ScrollUp} className="text-xl md:text-2xl font-semibold mt-15 mb-2 mt-10 w-full h-10 flex justify-center items-center text-blue-500">Meet Our Expert Staff &amp; Their Tech Stacks</motion.h2>
-            <div className="w-full p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+            <div className="w-full md:px-8 px-8 ml-5 md:ml-0 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
                 {StaffData.map((staff) =>(
                 <motion.div {...scrollLeft} {...CardHover} className="w-[90%] flex flex-col shadow-[0_0_10px_rgba(0,0,0,0.1)] rounded-sm items-center my-5">
                     <img src={staff.img} className="w-20 h-20 mt-10 mb-5 rounded-full shadow-[0_0_10px_rgba(0,0,0,0.1)] object-cover"/>
@@ -170,7 +154,7 @@ export default function Home(){
                             ))}
                         </ul>
                     </div>
-                    <motion.div {...scrollLeft} className="w-[60%] md:w-[60%] sm:w-[75%] h-12 mb-5 flex items-center justify-evenly">
+                    <motion.div {...scrollLeft} className="w-[50%] md:w-[60%] sm:w-[75%] h-12 mb-5 flex items-center justify-evenly">
                         <motion.Anchor {...CardHover} {...CardClicks} to="#"><FaLinkedin  className="w-5 h-10 cursor-pointer text-[#0077B5]"/>
                         </motion.Anchor>
                         <motion.Anchor {...CardHover} {...CardClicks} to="#"><FaTwitter className="w-5 h-10 cursor-pointer text-[#1DA1F2]"/>

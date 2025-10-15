@@ -7,7 +7,7 @@ export default function Footer(){
                 <h3 className="text-3xl font-semibold text-white">
                     WorkSphere
                 </h3>
-                <ul className="flex w-120 h-full justify-evenly items-center text-sm text-white">
+                <ul className="flex md:w-120 w-100 h-full justify-evenly items-center md:text-sm text-xs font-semibold text-white">
                     <li>
                         <Link to="/" className="px-5 py-2 hover:bg-blue-600 rounded-sm">Home</Link>
                     </li>
