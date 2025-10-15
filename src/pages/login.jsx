@@ -2,7 +2,7 @@ import Footer from "../components/footer";
 import NavBar from "../components/NavBar";
 import PageHeader from "../components/pageHeader";
 // import loginImg from '../images/conb3.jpg'
-import loginImg from '../images/auths (2).jpg'
+import loginImg from '../images/auths (2).webp'
 
 import { motion } from "framer-motion";
 import {CardClicks, CardHover} from "../animations/motion";
