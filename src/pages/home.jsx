@@ -17,7 +17,7 @@ export default function Home(){
     return(
         <>
             <NavBar />
-            <div className="w-full h-[90vh] relative">
+            <div className="w-full h-[90vh] relative overflow-hidden">
                 <img src={bgSlider}  className="w-full h-full object-cover"/>
                 <div className="absolute w-full h-full inset-0 bg-black/45 px-5">
                     <div className="w-200 h-100 absolute top-25 p-5">
@@ -37,11 +37,11 @@ export default function Home(){
                     </div>
                 </div>
             </div>
-            <div className="my-10 w-full h-[220vh] sm:h-[140vh] md:h-[80vh] flex flex-col items-center px-10 ">
+            <div className="md:my-10 mb-5 w-full h-[220vh] sm:h-[140vh] md:h-[80vh] flex flex-col items-center md:px-10 px-7 ">
                 <motion.h2 {...scrollRight} className="mt-10 text-3xl font-semibold text-blue-400">Our Work Process</motion.h2>
                 <motion.p {...scrollLeft} className="text-xs text-gray-700 mt-2 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint perspiciatis dolor iste quae vero praesentium doloribus deleniti vel nesciunt porro!</motion.p>
                 <motion.div {...ScrollUp} className="w-full h-[75%] mt-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:px-5">
-                    <motion.div {...CardHover} className="w-full sm:w-75 md:w-85 h-45 flex shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:cursor-pointer mb-5">
+                    <motion.div {...CardHover} className="w-full sm:w-75 md:w-85 h-45 flex shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:cursor-pointer md:mb-5 mb-2">
                         <div className="w-20 h-full p-5">
                            < User className="w-7 h-7 text-blue-400 hover:text-blue-500 mt-2" />
                            <h3 className="text-2xl md:text-4xl text-blue-100 mt-10">01</h3>
@@ -52,12 +52,9 @@ export default function Home(){
                             <p className="text-gray-700 w-full md:w-60 h-auto text-left sm:text-[10px] text-xs md:text-xs">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam tempora dolores dolore ab quam quae dolores dolore ab quam quae.
                             </p>
-                            {/* <p className=" text-gray-700 w-60 h-auto text-left text-justify text-xs">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, repellat.
-                            </p> */}
                         </div>
                     </motion.div>
-                    <motion.div {...CardHover} className="w-full sm:w-75 md:w-85 h-45 flex shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:cursor-pointer mb-5">
+                    <motion.div {...CardHover} className="w-full sm:w-75 md:w-85 h-45 flex shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:cursor-pointer md:mb-5 mb-2">
                         <div className="w-20 h-full p-5">
                            < SearchCheckIcon className="w-7 h-7 text-blue-400 hover:text-blue-500 mt-2" />
                            <h3 className="text-2xl md:text-4xl text-blue-100 mt-10">02</h3>
@@ -68,12 +65,10 @@ export default function Home(){
                             <p className="text-gray-700 w-full md:w-60 h-auto text-left sm:text-[10px] text-xs md:text-xs">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam tempora dolores dolore ab quam quae dolores dolore ab quam quae.
                             </p>
-                            {/* <p className=" text-gray-700 w-60 h-auto text-left text-justify text-xs">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, repellat.
-                            </p> */}
+                           
                         </div>
                     </motion.div>
-                    <motion.div {...CardHover} className="w-full sm:w-75 md:w-85 h-45 flex shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:cursor-pointer mb-5">
+                    <motion.div {...CardHover} className="w-full sm:w-75 md:w-85 h-45 flex shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:cursor-pointer md:mb-5 mb-2">
                         <div className="w-20 h-full p-5">
                            < Send className="w-7 h-7 text-blue-400 hover:text-blue-500 mt-2" />
                            <h3 className="text-2xl md:text-4xl text-blue-100 mt-10">03</h3>
@@ -89,7 +84,7 @@ export default function Home(){
                             </p> */}
                         </div>
                     </motion.div>
-                    <motion.div {...CardHover} className="w-full sm:w-75 md:w-85 h-45 flex shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:cursor-pointer mb-5">
+                    <motion.div {...CardHover} className="w-full sm:w-75 md:w-85 h-45 flex shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:cursor-pointer md:mb-5 mb-2">
                         <div className="w-20 h-full p-5">
                            < Link className="w-7 h-7 text-blue-400 hover:text-blue-500 mt-2" />
                            <h3 className="text-2xl md:text-4xl text-blue-100 mt-10">04</h3>
@@ -105,7 +100,7 @@ export default function Home(){
                             </p> */}
                         </div>
                     </motion.div>
-                    <motion.div {...CardHover} className="w-full sm:w-75 md:w-85 h-45 flex shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:cursor-pointer mb-5">
+                    <motion.div {...CardHover} className="w-full sm:w-75 md:w-85 h-45 flex shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:cursor-pointer md:mb-5 mb-2">
                         <div className="w-20 h-full p-5">
                            < Video className="w-7 h-7 text-blue-400 hover:text-blue-500 mt-2" />
                            <h3 className="text-2xl md:text-4xl text-blue-100 mt-10">05</h3>
@@ -121,7 +116,7 @@ export default function Home(){
                             </p> */}
                         </div>
                     </motion.div>
-                    <motion.div {...CardHover} className="w-full sm:w-75 md:w-85 h-45 flex shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:cursor-pointer mb-5">
+                    <motion.div {...CardHover} className="w-full sm:w-75 md:w-85 h-45 flex shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:cursor-pointer md:mb-5 mb-2">
                         <div className="w-20 h-full p-5">
                            < Briefcase className="w-7 h-7 text-blue-400 hover:text-blue-500 mt-2" />
                            <h3 className="text-2xl md:text-4xl text-blue-100 mt-10">06</h3>
@@ -140,7 +135,7 @@ export default function Home(){
             <Company />
             <div>
             <motion.h2 {...ScrollUp} className="text-xl md:text-2xl font-semibold mt-15 mb-2 mt-10 w-full h-10 flex justify-center items-center text-blue-500">Meet Our Expert Staff &amp; Their Tech Stacks</motion.h2>
-            <div className="w-full md:px-8 px-8 ml-5 md:ml-0 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+            <div className="w-full md:px-8 px-3 ml-5 md:ml-0 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
                 {StaffData.map((staff) =>(
                 <motion.div {...scrollLeft} {...CardHover} className="w-[90%] flex flex-col shadow-[0_0_10px_rgba(0,0,0,0.1)] rounded-sm items-center my-5">
                     <img src={staff.img} className="w-20 h-20 mt-10 mb-5 rounded-full shadow-[0_0_10px_rgba(0,0,0,0.1)] object-cover"/>

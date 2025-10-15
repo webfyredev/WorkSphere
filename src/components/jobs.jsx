@@ -19,10 +19,10 @@ export default function Job (){
     }
     return(
         <>
-            <motion.h2 {...ScrollUp} className="text-2xl font-semibold mt-15 mb-5 w-full h-10 flex justify-center items-center text-blue-500">Latest Jobs Offers</motion.h2>
+            <motion.h2 {...ScrollUp} className="text-2xl font-semibold md:mt-15 mt-5 mb-5 w-full h-10 flex justify-center items-center text-blue-500">Latest Jobs Offers</motion.h2>
             <div className='mt-5 w-full p-5 gap-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3'>
             {Jobs.map((job) => (
-                <motion.div {...CardHover} {...scrollLeft} className='sm:w-full md:w-[90%] rounded-xl shadow-[0_0_10px_rgba(0,0,0,0.1)] cursor-pointer flex flex-col items-center p-3 m-5 sm:overflow-hidden'>
+                <motion.div {...CardHover} {...scrollLeft} className='sm:w-full md:w-[90%] rounded-xl shadow-[0_0_10px_rgba(0,0,0,0.1)] cursor-pointer flex flex-col items-center p-3 m-5 sm:overflow-hidden oveflow-hidden'>
                     <div key={job.id} className={`w-30 h-6 ml-65 sm:ml-50 md:ml-60 flex items-center justify-center text-xs font-semibold ${getBgColor(job.type)}`}>{job.type}</div>
                         <div className='w-20 h-20 border-1 border-blue-100 flex justify-center items-center shadow-lg rounded-full'>
                             <img src={job.logo}  className='w-[80%] h-[80%] rounded-full'/>

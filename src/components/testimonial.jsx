@@ -15,7 +15,7 @@ export default function Testimonial(){
 
         <>
         <motion.h2 {...ScrollUp} className="text-2xl font-semibold mt-20 w-full h-10 flex justify-center items-center text-blue-500">Our Clients Reports</motion.h2>
-        <p className="w-full h-10 flex items-center justify-center text-gray-400 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, fugiat!</p>
+        <p className="md:w-full h-10 flex items-center justify-center text-gray-400 text-xs md:text-sm text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, fugiat!</p>
         <div className="w-full mx-auto px-5 py-10 relative mb-5">
         <Swiper 
             modules={[Autoplay, Pagination, Navigation]}
