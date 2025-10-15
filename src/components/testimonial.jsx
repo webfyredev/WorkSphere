@@ -15,7 +15,7 @@ export default function Testimonial(){
 
         <>
         <motion.h2 {...ScrollUp} className="text-2xl font-semibold mt-20 w-full h-10 flex justify-center items-center text-blue-500">Our Clients Reports</motion.h2>
-        <p className="w-full h-10 flex items-center justify-center text-gray-400 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, fugiat!</p>
+        <p className="md:w-full h-10 flex items-center justify-center text-gray-400 text-xs md:text-sm text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, fugiat!</p>
         <div className="w-full mx-auto px-5 py-10 relative mb-5">
         <Swiper 
             modules={[Autoplay, Pagination, Navigation]}
@@ -34,7 +34,7 @@ export default function Testimonial(){
         >
             {testimonials.map((data, index) =>(
                 <SwiperSlide key={index}>
-                    <motion.div {...CardHover} className="bg-white w-[90%] shadow- shadow-[0_0_10px_rgba(0,0,0,0.1)] rounded-2xl p-6 flex flex-col items-center justify-center text-center h-75 mb-15 cursor-pointer">
+                    <motion.div {...CardHover} className="ml-5 mt-5 bg-white w-[90%] shadow- shadow-[0_0_10px_rgba(0,0,0,0.1)] rounded-2xl p-6 flex flex-col items-center justify-center text-center h-75 mb-15 cursor-pointer">
                         <img src={data.img} className="w-16 h-16 rounded-full mb-4 object-cover" />
                         <p className="text-gray-600 mb-4 text-sm">{data.text}</p>
                         <h3 className="font-semibold text-sm text-blue-600">{data.name}</h3>

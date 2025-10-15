@@ -34,9 +34,9 @@ export default function Jobs(){
             <motion.h2 {...ScrollUp} className="text-2xl md:text-3xl font-semibold mt-20 w-full h-10 flex justify-center items-center text-blue-500 mb-5">
                 Latest Job Offers
             </motion.h2>
-             <motion.div {...scrollLeft} className="w-full h-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 p-3">
+             <div className="w-full h-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 p-3 mb-10 md:mb-5">
                 {jobs.map((data, index) =>(
-                    <motion.div {...CardHover} className="w-[98%] h-auto p-5 flex flex-col shadow-[0_0_5px_rgba(0,0,0,0.1)] rounded-md">
+                    <motion.div {...CardHover} {...scrollLeft} className="w-[98%] h-auto p-5 flex flex-col shadow-[0_0_5px_rgba(0,0,0,0.1)] rounded-md">
                         <img src={data.img} className="mb-3 rounded-sm w-full h-55 object-cover"/>
                         <Link to="#">
                             <h3 className="text-lg font-semibold text-blue-500 mb-3">{data.title}</h3>
@@ -44,10 +44,10 @@ export default function Jobs(){
                         <p className="text-gray-500 mb-3">{data.company} . {data.location}</p>
                         <p className="text-gray-500 mb-3">{data.type}</p>
                         <p className=" mb-3 font-semibold   text-blue-500">{data.salary}</p>
-                        <div className="w-[80%] md:w-full h-auto mb-3 overflow-hidden">
+                        <div className="w-[70%] md:w-full h-auto mb-3 overflow-hidden">
                             <ul className="flex flex-row justify-between items-center">
                                 {data.skills.map((skills, index) =>(
-                                    <motion.li key={index} className="text-xs md:text-[12px] px-3 sm:px-2 sm:text-[10px] md:px-3 h-7 flex items-center rounded-xs bg-gray-100 text-gray-700 shadow-[0_0_2px_rgba(0,0,0,0.1)] font-semibold hover:bg-linear-to-r from-blue-500 to-blue-600 cursor-pointer hover:text-white transition-all duration-300">
+                                    <motion.li {...CardHover} key={index} className="text-[9px] md:text-[12px] px-3 sm:px-2 sm:text-[10px] md:px-3 h-7 flex items-center rounded-xs bg-gray-100 text-gray-700 shadow-[0_0_2px_rgba(0,0,0,0.1)] font-semibold hover:bg-linear-to-r from-blue-500 to-blue-600 cursor-pointer hover:text-white transition-all duration-300">
                                         {skills}
                                     </motion.li>
                                 ))}
@@ -57,7 +57,7 @@ export default function Jobs(){
                         <p className="text-gray-500 text-[10px] w-full h-6 flex justify-end">Posted: {data.posted}</p>
                     </motion.div>
                 ))}
-             </motion.div>
+             </div>
              <Doms 
              img = {domsImg}
              title = "Kickstart Your Tech Career Today"
